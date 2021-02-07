@@ -31,3 +31,28 @@
  * Input => Terdapat 1 buah batu kecil, 2 buah batu sedang
  * output => Kecepatan akhir bola salu adalah 0m/s
  */
+ //Start: 13:31
+/* PSEUDOCODE
+
+STORE kecepatan AS NUMBER WITH ANY VALUE
+STORE batuKecil AS NUMBER WITH ANY VALUE
+STORE batuSedang AS NUMBER WITH ANY VALUE
+STORE batuBesar AS NUMBER WITH ANY VALUE
+
+IF batuBesar IS TRUTHY
+  DISPLAY "ketemu batu besar, maka bola salju berhenti"
+
+ELSE 
+  SET kecepatan WITH kecepatan MINUS batuKecil TIMES 0.5 
+	SET kecepatan WITH kecepatan MINUS batuSedang TIMES 1.5
+	
+	IF kecepatan LESS THAN 0
+		SET kecepatan WITH 0
+	END IF
+	
+	DISPLAY "Kecepatan akhir bola salu adalah <kecepatan>m/s"
+END IF
+
+*/
+//done pseudocode, doublechecking: 13:40
+//done double checking tiga tiganya, 13:45, total: +-40 menit

@@ -44,7 +44,20 @@ Rule:
 - Hanya gunakan built in function yang diperbolehkan (cek readme).
 
 */
-
-let input = '123'
+//start: 13:21
+//asumsi: input selalu sesuai format yang diekspetasikan dan benar
+let input = '4212'
 
 // Tulis code di sini...
+for(let n = 1; n<= input.length; n++){ //Looping sebanyak jumlah digit input
+	let baris = "" //deklarasi variabel untuk setiap baris yang akan ditampilkan
+	
+	for(let m = 0; m<Number(input[n-1]); m++)	//Looping sebanyak jumlah digit tiap indeks dimulai dari indeks 0
+		if(n%2 === 1)
+			baris+="$"	// print $ jika digit urutan ganjil
+		else
+			baris+="|"	//print | jika digit urutan genap
+		
+	console.log(baris) //print baris tersebut
+}
+//done code, checking output, debugging: 13:30

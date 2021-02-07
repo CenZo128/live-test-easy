@@ -46,10 +46,35 @@ output:
 Total harga dari 1 jam pemesanan lapangan futsal berbasis pluran di malam hari adalah 140000
 
 */
-
-var isMember = false
-var totalJam = 0
-var waktuMain = ""
-var jenisLapangan = ""
+//Mulai: 13:05 
+//asumsi: input selalu sesuai format dan selalu benar ( tidak negatif, string, etc )
+//Input
+var isMember = true
+var totalJam = 2
+var waktuMain = "siang"
+var jenisLapangan = "rumput sintetis"
+var harga = 0
 
 // Your code here
+if(jenisLapangan === "pluran"){
+	if(waktuMain === "pagi" || waktuMain === "siang" || waktuMain === "sore")
+		harga = totalJam*120000
+		
+	else if(waktuMain === "malam")
+		harga = totalJam*140000
+}
+
+else if (jenisLapangan === "rumput sintetis") {
+	if(waktuMain === "pagi" || waktuMain === "siang" || waktuMain === "sore")
+		harga = totalJam*100000
+		
+	else if(waktuMain === "malam")
+		harga = totalJam*120000	
+}
+
+if(isMember)
+	harga*=0.8
+
+console.log(`Total harga dari ${totalJam} jam pemesanan lapangan futsal berbasis ${jenisLapangan} di ${waktuMain} hari adalah ${harga}`)
+
+//done code, checking output, debugging: 13:20
