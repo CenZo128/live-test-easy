@@ -48,8 +48,48 @@ Total harga dari 1 jam pemesanan lapangan futsal berbasis pluran di malam hari a
 */
 
 var isMember = false
-var totalJam = 0
-var waktuMain = ""
-var jenisLapangan = ""
+var totalJam = 2
+var waktuMain = "malam"
+var jenisLapangan = "pluran"
+let harga = 0
+let totalHarga = 0
 
 // Your code here
+switch (jenisLapangan) {
+  case "rumput sintesis" :
+    if (isMember === true){
+      if (waktuMain === "malam"){
+        harga = 120000
+      } else {
+        harga = 100000
+      }
+      totalHarga = (totalJam * harga) * 0.2
+    } else if (isMember === false) {
+      if (waktuMain === "malam"){
+        harga = 120000
+      } else {
+        harga = 100000
+      }
+      totalHarga = totalJam * harga
+    }
+    console.log(total)
+  break
+  case "pluran" :
+    if (isMember === true){
+      if (waktuMain === "malam"){
+        harga = 140000
+      } else {
+        harga = 120000
+      }
+      totalHarga = (totalJam * harga) * 0.2
+    } else if (isMember === false) {
+      if (waktuMain === "malam"){
+        harga = 140000
+      } else {
+        harga = 120000
+      }
+      totalHarga = totalJam * harga
+    }
+    console.log(`Total harga dari ${totalJam} jam pemesanan lapangan futsal berbasis ${jenisLapangan} di ${waktuMain} hari adalah ${totalHarga}`)
+  break
+}

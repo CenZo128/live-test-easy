@@ -31,3 +31,37 @@
  * Input => Terdapat 1 buah batu kecil, 2 buah batu sedang
  * output => Kecepatan akhir bola salu adalah 0m/s
  */
+
+ /**
+  * MIND MAPPING
+  * BOLA = 3
+  * 
+  * X = 0.5
+  * Y = 1.5
+  * Z =  3
+  * 
+  * INPUT = 1 * X
+  * 
+  * LAKUKAN PENGULANGAN WHILE
+  * KETIKA BOLA BELUM 0
+  *     BOLA - INPUT     
+  * THEN
+  * TAMPILKAN BOLA NOW
+  * 
+  * 
+  * PSEUDOCODE
+  * ========================================================
+  * STORE bola AS NUMBER WITH 3
+  * STORE x AS NUMBER WITH 0.5
+  * STORE y AS NUMBER WITH 1.5
+  * STORE z AS NUMBER WITH 3
+  * 
+  * STORE input AS NUMBER WITH ANY NUMBER
+  * SET INPUT WITH jumlah TIMES tipeBatu
+  * 
+  * WHILE bola MORE THAN 0
+  *     SET bola WITH bola MINUS input
+  * END WHILE
+  *     DISPLAY bola
+  * 
+  */
